@@ -1313,6 +1313,26 @@ left: 30px;
     display: none;
    }
 
+   .experience-title {
+    font-size: 28px;
+   }
+
+   .more-slide {
+    height: 450px; 
+  }
+
+  .experience-wrapp {
+    top: -200px;
+  }
+
+  .slider-2 {
+   margin-top: -50px;
+  }
+
+  .experience-video {
+    margin-top: -110px;
+  }
+
   .destination-slider-tx {
     width: 90%;
     font-size: 10px;
@@ -1447,10 +1467,10 @@ left: 30px;
   }
 
   .daily-fs-images img {
-    height: 250px;
+    height: 300px;
   }
   .landing-content h2 {
-    font-size: 25px;
+    font-size: 40px;
   }
 
   .video-slider {

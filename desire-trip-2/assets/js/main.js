@@ -51,7 +51,7 @@ let exploreSwiper = new Swiper(".explore-slider", {
 /*==================== Second Slider Start  ====================*/
 
 let scSwiper = new Swiper(".slider-2", {
-  slidesPerView: 4,
+  slidesPerView: 2,
   loop: true,
   spaceBetween: 15,
   grabCursor: true,
@@ -63,15 +63,11 @@ let scSwiper = new Swiper(".slider-2", {
     300: {
       slidesPerView: 1.3
     },
-    400: {
+    900: {
       slidesPerView: 2
     },
-
-    900: {
-      slidesPerView: 3
-    },
     1200: {
-      slidesPerView: 4
+      slidesPerView: 2
     },
   },
 });
@@ -136,10 +132,10 @@ let moreSwiper = new Swiper(".more-slider", {
   },
   breakpoints: {
     300: {
-      slidesPerView: 1
+      slidesPerView: 1.3
     },
     900: {
-      slidesPerView: 1
+      slidesPerView: 1.3
     },
     1200: {
       slidesPerView: 2
