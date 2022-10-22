@@ -211,7 +211,7 @@ body {
 .explore-content h2 {
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  
+
   color: #E58620;
 }
 
@@ -222,7 +222,7 @@ body {
 .explore-content p {
   letter-spacing: 0.02em;
 
-color: #C7C7C7;
+  color: #C7C7C7;
 }
 
 .explore-slider-wrapp {
@@ -242,16 +242,16 @@ color: #C7C7C7;
   justify-content: flex-start;
   align-items: flex-end;
   text-transform: uppercase;
-padding: 20px;
-border-radius: 5px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 
 .explore-slide h2 {
   font-size: 22px !important;
-color: #FFFFFF;
-font-family: 'Montserrat', sans-serif;
-font-weight: 600;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 
@@ -262,30 +262,35 @@ font-weight: 600;
 
 .daily {
   padding-top: 140px;
+  padding-bottom: 290px;
 }
 
-.daily-fs, .daily-sc {
+.daily-fs,
+.daily-sc {
   display: flex;
   padding-inline: 5%;
   align-items: center;
   gap: 50px;
 }
 
-.daily-fs-content h2, .daily-sc-content h2  {
+.daily-fs-content h2,
+.daily-sc-content h2 {
   letter-spacing: 0.02em;
-text-transform: uppercase;
-padding-bottom: 20px;
-color: #242424;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: #242424;
 }
 
-.daily-fs-content h2 span, .daily-sc-content h2 span {
+.daily-fs-content h2 span,
+.daily-sc-content h2 span {
   color: #E58620;
 }
 
-.daily-fs-content p, .daily-sc-content p {
+.daily-fs-content p,
+.daily-sc-content p {
   line-height: 150%;
   font-family: 'Montserrat', sans-serif;
-color: #606060;
+  color: #606060;
 
 }
 
@@ -300,7 +305,7 @@ color: #606060;
 }
 
 .daily-1 {
-   padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 
@@ -351,28 +356,84 @@ color: #606060;
 
 .date-item h2 {
   letter-spacing: 0.02em;
-font-size: 24px;
-color: #E58620;
+  font-size: 24px;
+  color: #E58620;
 
 }
 
 .date-item p {
   letter-spacing: 0.02em;
   font-family: 'Montserrat', sans-serif;
- color: #C7C7C7;
+  color: #C7C7C7;
 
 }
 
 
 .map-desc {
   letter-spacing: 0.02em;
-font-family: 'Montserrat', sans-serif;
-color: #C7C7C7;
+  font-family: 'Montserrat', sans-serif;
+  color: #C7C7C7;
 
 }
 
 /* ================== Map Section End ======================== */
 
+/* ================== Experience Start ======================== */
+
+.experience {
+ background: url('../images/experience-bg.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.experience-wrapp {
+  position: relative;
+  top: -280px;
+}
+
+.experience-title {
+  text-align: center;
+  letter-spacing: 0.02em;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 48px;
+color: #242424;
+}
+
+.experience-title span {
+  color: #E58620;
+}
+
+.video-section {
+  bottom: -190px;
+}
+
+.video-arrow {
+  position: relative;
+  top: -120px;
+}
+
+.experience-slide {
+  background: url('../images/instagram-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+
+.profile-photo {
+  position: absolute;
+  bottom: -10%;
+  left: 35%;
+  z-index: 999;
+}
+
+/* ================== Experience End ============================*/
 
 /* ================= Landing Start ==================== */
 
@@ -380,44 +441,46 @@ color: #C7C7C7;
   pointer-events: none;
 }
 
-.video-control {
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-  gap: 10px;
-  position: absolute;
-  bottom: 2rem;
-  left: 1rem;
-}
 
-.video-control img:nth-child(2) {
+.muted {
   width: 20px;
   height: 20px;
 }
 
-.video-control img:nth-child(1) {
-  width: 40px;
-  height: 40px;
+.play-btn {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
 }
 
 #muted {
   cursor: pointer;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
 }
 
 
-#play-btn {
-  transition: .5s;
-  width: 70px;
-  cursor: pointer;
-}
-
-#play-btn:hover {
-  transform: scale(1.05);
-}
 
 .selectextShadowHost {
   display: none !important;
   visibility: hidden !important;
+}
+
+.video-arrow-left, .more-arrow-left {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+
+.video-arrow-right, .more-arrow-right {
+  position: absolute;
+  right: 5%;
+  top: 50%;
 }
 
 
@@ -506,12 +569,13 @@ color: #C7C7C7;
   text-transform: uppercase;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
 .journey-slide p {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #606060;
+  color: #fff;
   width: 95%;
 }
 
@@ -691,6 +755,11 @@ color: #C7C7C7;
 
 /* ==================== Testimonials Start =============================== */
 
+
+.testimonials {
+  padding-top: 100px
+}
+
 .testimonials h2 {
   padding-top: 120px;
   white-space: nowrap;
@@ -791,6 +860,38 @@ color: #C7C7C7;
 
 /* ==================== Partners End =============================== */
 
+
+/* ==================== More Start ================================ */
+
+
+.more-section {
+  padding-bottom: 120px;
+}
+
+.more-slide {
+  background-image: url('../images/experience-1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.more-slide span {
+  text-transform: uppercase;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 140%;
+color: #FFFFFF;
+position: absolute;
+bottom: 20px;
+left: 30px;
+
+}
+
+/* ==================== More End =============================== */
 
 /* ==================== Footer Start =============================== */
 

@@ -21,7 +21,7 @@ navbarImg.addEventListener("click", function () {
 
 /*==================== Second Slider Start  ====================*/
 
-let scSwiper = new Swiper(".explore-slider", {
+let exploreSwiper = new Swiper(".explore-slider", {
   slidesPerView: 2.6,
   loop: true,
   spaceBetween: 15,
@@ -35,111 +35,157 @@ let scSwiper = new Swiper(".explore-slider", {
 /*==================== Second Slider End  ====================*/
 
 
-/*==================== Scroll Reveal Animation Start ====================*/
-const sr = ScrollReveal({
-  distance: "60px",
-  duration: 2800,
-  // reset: true,
+/*==================== Second Slider Start  ====================*/
+
+let scSwiper = new Swiper(".slider-2", {
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 15,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1.3
+    },
+    400: {
+      slidesPerView: 2
+    },
+
+    900: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 4
+    },
+  },
 });
 
-sr.reveal(
-  `.landing-tx, .help-center-form, .first-slider, .about-us-item, .journey-sc-slider, .ds-title, .gallery-card-big, .testimonials-title, .partner-title, .footer-social, .copyright`,
-  {
-    origin: "top",
-    interval: 100,
+/*==================== Second Slider End  ====================*/
+
+/*==================== Second Slider Start  ====================*/
+
+let videoSwiper = new Swiper(".video-slider", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 15,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".video-arrow-left",
+    prevEl: ".video-arrow-right",
   }
-);
+});
 
-sr.reveal(
-  `.about-title, .journey-fs-img, .ds-carousel, .gallery-collection-content, .card-1, .footer-form-tx`,
-  {
-    origin: "left",
+/*==================== Second Slider End  ====================*/
+
+
+/*==================== Fourth Slider End  ====================*/
+
+let frSwiper = new Swiper(".slider-4", {
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 20,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1.3,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1500: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+});
+
+/*==================== Fourth Slider End  ====================*/
+
+/*==================== More Slider End  ====================*/
+
+let moreSwiper = new Swiper(".more-slider", {
+  slidesPerView: 2,
+  loop: true,
+  spaceBetween: 15,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".more-arrow-left",
+    prevEl: ".more-arrow-right",
   }
-);
+});
 
-sr.reveal(
-  `.about-text, .journey-sc-img, .journey-content, .card-2, .partner-item, .footer-inputs`,
-  {
-    origin: "right",
-    interval: 100,
-  }
-);
+/*==================== More Slider End  ====================*/
 
-/*==================== Scroll Reveal Animation End ====================*/
-
-/* ======================= Video Lazy Loading Start =========================== */
-
-window.onload = function () {
-  setTimeout(() => {
-    var video = document.querySelector('.active-video');
-   if(video.played) {
-    function playVideo(videoSource, type) {
-      var videoElm = document.querySelector('.active-video');
-      var videoSourceElm = document.getElementById('video-sr'); 
-       if (videoElm.paused) {
-            videoElm.pause();
-         } else {
-          videoSourceElm.src = './assets/videos/desire_trip_video_2.mp4';
-       videoSourceElm.type = 'video/mp4';
-      
-       
-          videoElm.load();
-        videoElm.play();
-         }
-        
-       
-      }
-
-      playVideo()
-   }
-
-  }, 7000);
-};
-
-/* ======================= Video Lazy Loading End  =========================== */
 
 /* ======================= Video Play Start =========================== */
-//./assets/videos/desire_trip_video_2.mp4
+
+let videos = document.querySelectorAll('.video-1');
+let ppButtons = document.querySelectorAll(".play-btn");
+let mutedS = document.querySelectorAll(".muted");
+
+for(let i = 0; i < videos.length; i++) {
+  ppButtons[i].addEventListener("click", function () {
+    if (videos[i].paused) {
+      videos[i].play();
+      ppButtons[i].src = './assets/images/pause-btn.svg'
+    } else {
+      videos[i].pause();
+      ppButtons[i].src = './assets/images/play.svg'
+    }
+  });
+  
+  
+  
+  mutedS[i].addEventListener("click", function () {
+    if (videos[i].muted === true) {
+      videos[i].muted = false;
+      mutedS[i].src = './assets/images/unmute.svg'
+    } else {
+      videos[i].muted = true;
+      mutedS[i].src = './assets/images/muted.svg'
+    }
+  });
+
+
+}
 
 
 
 
-var el = document.querySelector(".active-video");
-var ppbutton = document.getElementById("play-btn");
-var muted = document.getElementById("muted");
-ppbutton.addEventListener("click", function () {
-  if (el.paused) {
-    el.play();
-    ppbutton.src = './assets/images/pause-btn.svg'
-  } else {
-    el.pause();
-    ppbutton.src = './assets/images/play.svg'
-  }
-});
-
-
-
-muted.addEventListener("click", function () {
-  if (el.muted === true) {
-    el.muted = false;
-    muted.src = './assets/images/unmute.svg'
-  } else {
-    el.muted = true;
-    muted.src = './assets/images/muted.svg'
-  }
-});
 
 
 
 
+/* ======================= Video Play End  =========================== */
 
+
+
+let activeVideoSLide = document.querySelector('.swiper-slide.video-slide.swiper-slide-active > video');
+let ppbutton = document.querySelector('.swiper-slide.video-slide.swiper-slide-active > .play-btn');
 
 
 fraction = 0.99;
 function checkScroll() {
 
     
-        var video = el;
+        var video = activeVideoSLide;
         var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
             b = y + h, //bottom
             visibleX, visibleY, visible;
@@ -159,4 +205,3 @@ function checkScroll() {
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
 
-/* ======================= Video Play End  =========================== */
