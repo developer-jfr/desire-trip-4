@@ -1333,6 +1333,10 @@ left: 30px;
     margin-top: -110px;
   }
 
+  .more-arrow-left, .more-arrow-right {
+    display: none;
+  }
+
   .destination-slider-tx {
     width: 90%;
     font-size: 10px;
