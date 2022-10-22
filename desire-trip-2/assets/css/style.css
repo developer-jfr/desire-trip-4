@@ -1188,6 +1188,9 @@ left: 30px;
     height: 450px;
   }
    
+  .video-slider {
+    margin-inline: 100px !important;
+  }
 
 
 
@@ -1439,12 +1442,21 @@ left: 30px;
     width: 100%;
   }
 
+  .experience-slide {
+    height: 450px;
+  }
+
   .daily-fs-images img {
     height: 250px;
   }
   .landing-content h2 {
     font-size: 25px;
   }
+
+  .video-slider {
+    margin-inline: 10px !important;
+  }
+
 
 
   .landing-content p {

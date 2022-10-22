@@ -37,7 +37,7 @@ let exploreSwiper = new Swiper(".explore-slider", {
     },
 
     500: {
-      slidesPerView: 2.6
+      slidesPerView: 1.3
     },
     1500: {
       slidesPerView: 2.6
@@ -110,22 +110,14 @@ let frSwiper = new Swiper(".slider-4", {
       slidesPerView: 1.3,
       spaceBetween: 10,
     },
-    400: {
-      slidesPerView: 2,
+    600: {
+      slidesPerView: 1.3,
       spaceBetween: 30,
     },
     1200: {
       slidesPerView: 3,
       spaceBetween: 30,
-    },
-    1400: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1500: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
+    }
   },
 });
 
@@ -141,6 +133,17 @@ let moreSwiper = new Swiper(".more-slider", {
   navigation: {
     nextEl: ".more-arrow-left",
     prevEl: ".more-arrow-right",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1
+    },
+    900: {
+      slidesPerView: 1
+    },
+    1200: {
+      slidesPerView: 2
+    }
   }
 });
 
