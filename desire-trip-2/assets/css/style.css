@@ -145,6 +145,18 @@ body {
   justify-content: space-between;
   padding-inline: 6%;
   padding-top: 100px;
+  position: relative;
+}
+
+
+.home-timeline-wrapp::after {
+  content: '';
+  position: absolute;
+  top: 65%;
+  left: 13.7%;
+  width: 75%;
+  height: 1px;
+  background: #FFF;
 }
 
 
@@ -175,6 +187,19 @@ body {
   font-size: 16px;
   color: #fff;
   font-weight: 500;
+  position: relative;
+}
+
+
+.home-timeline-item span::after {
+  content: '';
+  position: absolute;
+  bottom: -175%;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 
@@ -306,6 +331,21 @@ body {
 
 .daily-1 {
   padding-bottom: 5px;
+  height: auto;
+  width: 101%;
+}
+
+.daily-sc-content {
+  width: 60%;
+}
+
+.daily-images-2 {
+  gap: 5px;
+}
+
+.daily-images-2 img {
+   height: auto;
+   width: 50%;
 }
 
 
@@ -1041,6 +1081,36 @@ left: 30px;
     width: 140px;
   }
 
+  .home-timeline-wrapp:after {
+    top: 59.5%;
+  }
+
+  .map-section {
+    flex-direction: column;
+  }
+
+  .map-items-wrapp {
+    flex-wrap: wrap;
+  }
+
+  .daily-fs-images img {
+    height: 400px;
+  }
+
+  .daily-sc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .daily-sc-content {
+    width: 100%  !important;
+  }
+
+  .daily-fs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .footer {
     padding-inline: 4%;
 
@@ -1080,6 +1150,45 @@ left: 30px;
   .journey-arrow-left {
     display: none;
   }
+
+
+  .home-timeline-wrapp {
+    padding-inline: 1%;
+  }
+  
+  .landing-content {
+    padding-left: 5%;
+  }
+
+  .landing-content h2 {
+    font-size: 40px;
+    padding-top: 70px;
+  }
+
+  .home-timeline-wrapp::after {
+    left: 9.7%;
+    width: 83%;
+  }
+  
+  .explore {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .explore-slider-wrapp {
+    width: 100%;
+  }
+  
+  .landing-content p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .explore-slide {
+    height: 450px;
+  }
+   
+
 
 
   .slider-3 {
@@ -1183,6 +1292,23 @@ left: 30px;
   .slider-3 {
     margin-inline: 50px !important;
   }
+
+  .home-timeline-wrapp {
+    display: none;
+  }
+
+  .main-landing {
+    padding-right: 60px;
+  }
+
+  .date-wrapp {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .explore-arrow-left, .explore-arrow-right {
+    display: none;
+   }
 
   .destination-slider-tx {
     width: 90%;
@@ -1305,6 +1431,25 @@ left: 30px;
     padding-inline: 15px;
   }
 
+  .main-landing {
+    padding-bottom: 20px !important;
+  }
+
+  .map-img {
+    width: 100%;
+  }
+
+  .daily-fs-images img {
+    height: 250px;
+  }
+  .landing-content h2 {
+    font-size: 25px;
+  }
+
+
+  .landing-content p {
+    font-size: 14px;
+  }
 
 
   .destination-slider-img {

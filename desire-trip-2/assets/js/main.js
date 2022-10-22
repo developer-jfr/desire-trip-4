@@ -29,7 +29,20 @@ let exploreSwiper = new Swiper(".explore-slider", {
   navigation: {
     nextEl: ".explore-arrow-left",
     prevEl: ".explore-arrow-right",
-  }
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1.3,
+      spaceBetween: 30,
+    },
+
+    500: {
+      slidesPerView: 2.6
+    },
+    1500: {
+      slidesPerView: 2.6
+    },
+  },
 });
 
 /*==================== Second Slider End  ====================*/
