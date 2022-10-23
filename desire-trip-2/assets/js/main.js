@@ -32,9 +32,8 @@ let exploreSwiper = new Swiper(".explore-slider", {
   },
   breakpoints: {
     300: {
-      slidesPerView: 1.3,
-      spaceBetween: 30,
-    },
+      slidesPerView: 1.3
+        },
 
     500: {
       slidesPerView: 2
@@ -84,7 +83,15 @@ let videoSwiper = new Swiper(".video-slider", {
   navigation: {
     nextEl: ".video-arrow-left",
     prevEl: ".video-arrow-right",
-  }
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1.3
+    },
+    900: {
+      slidesPerView: 1
+    }
+  },
 });
 
 /*==================== Second Slider End  ====================*/

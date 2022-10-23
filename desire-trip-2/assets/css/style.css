@@ -103,7 +103,7 @@ body {
   background: url('../images/about-us-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: centerd;
+  background-position-y: bottom;
 }
 
 .main-landing {
@@ -122,7 +122,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 54px;
   line-height: 140%;
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
@@ -148,68 +148,11 @@ body {
   position: relative;
 }
 
+.home-timeline-wrapp img {
+  
+  height: auto;
+  width: 100%;
 
-.home-timeline-wrapp::after {
-  content: '';
-  position: absolute;
-  top: 65%;
-  left: 13.7%;
-  width: 75%;
-  height: 1px;
-  background: #FFF;
-}
-
-
-.home-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  flex-grow: 1;
-}
-
-.home-timeline-item {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.387);
-  backdrop-filter: blur(14px);
-  transform: rotate(45deg);
-  font-size: 14px;
-  z-index: 111;
-  position: relative;
-}
-
-.home-timeline-item span {
-  transform: rotate(312.9deg);
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
-  position: relative;
-}
-
-
-.home-timeline-item span::after {
-  content: '';
-  position: absolute;
-  bottom: -175%;
-  left: 0;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #fff;
-}
-
-
-
-
-.home-item p {
-  text-align: center;
-  color: #fff;
-  font-weight: 400;
-  width: 70%;
 }
 
 
@@ -279,6 +222,19 @@ body {
   font-weight: 600;
 }
 
+.video-slide {
+  position: relative;
+  height: 600px;
+}
+
+.video-slide video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 
 /* ===================== Explore End ======================== */
 
@@ -293,9 +249,9 @@ body {
 .daily-fs,
 .daily-sc {
   display: flex;
-  padding-inline: 5%;
+  padding-inline: 8%;
   align-items: center;
-  gap: 50px;
+  gap: 90px;
 }
 
 .daily-fs-content h2,
@@ -322,6 +278,10 @@ body {
 .daily-fs-images {
   display: flex;
   gap: 10px;
+}
+
+.daily-fs-images img {
+  height: 500px;
 }
 
 .daily-sc {
@@ -358,7 +318,8 @@ body {
   align-items: center;
   gap: 50px;
   padding-inline: 5%;
-  padding-block: 100px;
+  padding-top: 100px;
+  margin-bottom: -50px;
 }
 
 .map-img {
@@ -424,11 +385,12 @@ body {
  background: url('../images/experience-bg.png');
  background-repeat: no-repeat;
  background-size: cover;
+ background-position-y: bottom;
 }
 
 .experience-wrapp {
   position: relative;
-  top: -280px;
+  top: -240px;
 }
 
 .experience-title {
@@ -471,6 +433,10 @@ color: #242424;
   bottom: -10%;
   left: 35%;
   z-index: 999;
+}
+
+.experience-video {
+  margin-block: -120px;
 }
 
 /* ================== Experience End ============================*/
@@ -625,16 +591,8 @@ color: #242424;
 }
 
 
-.journey-arrow-left {
-  position: absolute;
-  top: 38%;
-  left: 7%;
-}
-
-.journey-arrow-right {
-  position: absolute;
-  top: 38%;
-  right: 7%;
+.journey-arrow-right, .journey-arrow-left {
+ display: none;
 }
 
 
@@ -1193,6 +1151,9 @@ left: 30px;
   }
 
 
+  .map-section {
+    margin-bottom: 80px;
+  }
 
   .slider-3 {
     padding-top: 0 !important;
@@ -1252,6 +1213,8 @@ left: 30px;
   }
 
 
+
+
   .journey-img-groups img:nth-child(1) {
     width: 93%;
     height: auto;
@@ -1296,6 +1259,15 @@ left: 30px;
     margin-inline: 50px !important;
   }
 
+  .slider-2 {
+    margin-inline: 0 !important;
+    margin-left: 20px !important;
+  }
+
+  .video-arrow-right, .video-arrow-left {
+    display: none;
+  }
+
   .home-timeline-wrapp {
     display: none;
   }
@@ -1317,6 +1289,10 @@ left: 30px;
     font-size: 28px;
    }
 
+   .video-slide {
+    height: 500px;
+  }
+
    .more-slide {
     height: 450px; 
   }
@@ -1330,6 +1306,7 @@ left: 30px;
   }
 
   .experience-video {
+    margin-block: 0;
     margin-top: -110px;
   }
 
@@ -1433,10 +1410,7 @@ left: 30px;
     padding-inline: 0;
   }
 
-  .slider-2 {
-    margin-inline: 0 !important;
-    margin-left: 20px !important;
-  }
+
 
   .slider-3 {
     margin-inline: 10px !important;
@@ -1481,6 +1455,9 @@ left: 30px;
     margin-inline: 10px !important;
   }
 
+  .video-slide {
+    height: 350px;
+  }
 
 
   .landing-content p {
