@@ -1444,8 +1444,19 @@ left: 30px;
     height: 450px;
   }
 
+  .daily {
+    padding-bottom: 230px;
+  }
+  .experience-title {
+    margin-bottom: -40px;
+  }
+
+  .more-section {
+    padding-bottom: 40px;
+  }
+
   .daily-fs-images img {
-    height: 300px;
+    height: 235px;
   }
   .landing-content h2 {
     font-size: 40px;
@@ -1504,6 +1515,13 @@ left: 30px;
     font-size: 30px;
   }
 
+  .daily-sc {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    gap: 30px;
+  }
+
+  
   .partners-group {
     padding-bottom: 80px;
   }
