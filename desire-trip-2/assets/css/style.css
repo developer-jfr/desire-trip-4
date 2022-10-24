@@ -155,6 +155,10 @@ body {
 
 }
 
+.mobile-map {
+  display: none;
+}
+
 
 /* ================== Landing End ======================== */
 
@@ -1567,5 +1571,18 @@ left: 30px;
   .video-control {
     left: 0;
     bottom: 3rem;
+  }
+   
+  .map-img {
+    display: none;
+  }
+
+  .map-section {
+    padding-top: 20px;
+  }
+
+  .mobile-map {
+    display: block;
+    width: 100%;
   }
 }
