@@ -1233,15 +1233,13 @@ left: 30px;
     display: none;
   }
 
-  .daily-fs {
+  .daily-fs, .daily-sc {
     flex-direction: column;
     align-items: initial;
+    padding-inline: 5%;
   }
 
-  .daily-sc {
-    flex-direction: column;
-    align-items: initial;
-  }
+  
 
   .daily-fs-content {
     width: 100%;
