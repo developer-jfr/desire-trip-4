@@ -336,7 +336,11 @@ body {
 }
 
 .map-img {
-  width: 50%;
+  width: 100%;
+}
+
+.map-wrapp {
+  width: 60%;
 }
 
 .map-items-wrapp {
@@ -1055,11 +1059,10 @@ left: 30px;
   .home-timeline-wrapp:after {
     top: 59.5%;
   }
-
   .map-section {
-    flex-direction: column;
+    align-items: flex-start;
   }
-
+ 
   .map-items-wrapp {
     flex-wrap: wrap;
   }
@@ -1081,15 +1084,6 @@ left: 30px;
 
   }
 
-
-  .map-img {
-    display: none;
-  }
-
-  .mobile-map {
-    display: block;
-    width: 100%;
-  }
 }
 
 
@@ -1232,6 +1226,25 @@ left: 30px;
   .slider-1-arrows {
     display: none;
   }
+
+  .map-section {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .map-img {
+    display: none;
+  }
+
+  .map-wrapp {
+    width: 100%;
+  }
+
+  .mobile-map {
+    display: block;
+    width: 100%;
+  }
+
 
   .daily-fs, .daily-sc {
     flex-direction: column;
