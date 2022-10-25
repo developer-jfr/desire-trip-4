@@ -1062,6 +1062,7 @@ left: 30px;
   .map-section {
     align-items: initial;
     flex-direction: column;
+    padding-top: 0;
   }
 
   .map-img {
