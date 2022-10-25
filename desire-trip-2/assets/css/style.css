@@ -1064,7 +1064,11 @@ left: 30px;
     flex-direction: column;
     padding-top: 0;
   }
-
+ 
+  .map-wrapp {
+    width: 100%;
+  }
+  
   .map-img {
     display: none;
   }
