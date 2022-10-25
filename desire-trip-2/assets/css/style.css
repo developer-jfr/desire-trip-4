@@ -258,6 +258,10 @@ body {
   gap: 90px;
 }
 
+.daily-fs-content {
+  width: 60%;
+}
+
 .daily-fs-content h2,
 .daily-sc-content h2 {
   letter-spacing: 0.02em;
@@ -285,7 +289,12 @@ body {
 }
 
 .daily-fs-images img {
-  height: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.daily-fs-images div {
+  width: 100%;
 }
 
 .daily-sc {
@@ -1055,27 +1064,31 @@ left: 30px;
     flex-wrap: wrap;
   }
 
-  .daily-fs-images img {
-    height: 400px;
-  }
 
-  .daily-sc {
-    flex-direction: column;
-    align-items: flex-start;
+  .daily-fs, .daily-sc {
+    padding-inline: 5%;
   }
 
   .daily-sc-content {
     width: 100%  !important;
   }
 
-  .daily-fs {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
+ 
+ 
   .footer {
     padding-inline: 4%;
 
+  }
+
+
+  .map-img {
+    display: none;
+  }
+
+  .mobile-map {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -1091,6 +1104,14 @@ left: 30px;
 
   .slider-1-arrows {
     left: 32%;
+  }
+
+  .daily-fs, .daily-sc {
+    padding-inline: 2%;
+  }
+
+  .experience-video {
+    margin-block: 0;
   }
 
   .journey-info {
@@ -1211,6 +1232,23 @@ left: 30px;
   .slider-1-arrows {
     display: none;
   }
+
+  .daily-fs {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .daily-sc {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .daily-fs-content {
+    width: 100%;
+  }
+
+  
+
 
   .journey-info {
     flex-direction: column;
@@ -1459,9 +1497,6 @@ left: 30px;
     padding-bottom: 40px;
   }
 
-  .daily-fs-images img {
-    height: 235px;
-  }
   .landing-content h2 {
     font-size: 40px;
   }
@@ -1573,16 +1608,11 @@ left: 30px;
     bottom: 3rem;
   }
    
-  .map-img {
-    display: none;
-  }
+  
 
   .map-section {
     padding-top: 20px;
   }
 
-  .mobile-map {
-    display: block;
-    width: 100%;
-  }
+  
 }
