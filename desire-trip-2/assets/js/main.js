@@ -120,9 +120,8 @@ let frSwiper = new Swiper(".slider-4", {
       slidesPerView: 3,
       spaceBetween: 30,
     },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 30,
+    1300: {
+      slidesPerView: 4
     }
   },
 });
