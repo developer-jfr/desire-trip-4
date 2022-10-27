@@ -62,6 +62,9 @@ let scSwiper = new Swiper(".slider-2", {
     300: {
       slidesPerView: 1.3
     },
+    400: {
+      slidesPerView: 3.5
+    },
     900: {
       slidesPerView: 3
     },
