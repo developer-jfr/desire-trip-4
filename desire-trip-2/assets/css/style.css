@@ -305,7 +305,7 @@ body {
 .daily-1 {
   padding-bottom: 5px;
   height: auto;
-  width: 101%;
+  width: 100%;
 }
 
 .daily-sc-content {
@@ -318,7 +318,7 @@ body {
 
 .daily-images-2 img {
    height: auto;
-   width: 50%;
+   width: 100%;
 }
 
 
@@ -1087,9 +1087,7 @@ left: 30px;
     padding-inline: 5%;
   }
 
-  .daily-sc-content {
-    width: 100%  !important;
-  }
+  
 
 
  
@@ -1273,6 +1271,9 @@ left: 30px;
     width: 100%;
   }
 
+  .daily-sc-content {
+    width: 100%  !important;
+  }
   
 
 
